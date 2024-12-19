@@ -25,7 +25,7 @@ subbinary
 ```
 
 # 项目结构
-.
+```
 ├── README.md
 ├── app
 │   ├── CMakeLists.txt
@@ -85,3 +85,4 @@ subbinary
         ├── src
         │   └── sublib3.cpp
         └── sublibrary3Config.cmake
+```
