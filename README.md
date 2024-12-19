@@ -15,17 +15,6 @@
 
 # 依赖关系图示
 ```
-subbinary
-├── depends on ──> sublibrary1
-│   ├── depends on ──> sublibrary2
-│   │   └── depends on ──> sublibrary3
-│   └── depends on ──> sublibrary3
-└── depends on ──> sublibrary2
-└── depends on ──> sublibrary3
-```
-
-# 项目结构
-```
 ├── README.md
 ├── app
 │   ├── CMakeLists.txt
@@ -34,40 +23,32 @@ subbinary
 │       └── main.cpp
 ├── build.sh
 ├── clean.sh
-├── install
-│   ├── include
-│   │   ├── sublib1
-│   │   │   └── sublib1.h
-│   │   ├── sublib2
-│   │   │   └── sublib2.h
-│   │   └── sublib3
-│   │       └── sublib3.h
-│   └── lib
-│       ├── cmake
-│       │   ├── sublibrary1
-│       │   │   ├── sublibrary1Config.cmake
-│       │   │   ├── sublibrary1Targets-noconfig.cmake
-│       │   │   └── sublibrary1Targets.cmake
-│       │   ├── sublibrary2
-│       │   │   ├── sublibrary2Config.cmake
-│       │   │   ├── sublibrary2Targets-noconfig.cmake
-│       │   │   └── sublibrary2Targets.cmake
-│       │   └── sublibrary3
-│       │       ├── sublibrary3Config.cmake
-│       │       ├── sublibrary3Targets-noconfig.cmake
-│       │       └── sublibrary3Targets.cmake
-│       ├── libsublibrary1.a
-│       ├── libsublibrary2.a
-│       └── libsublibrary3.a
+├── docs
+├── extlib
+│   ├── CMakeLists.txt
+│   └── extlib1
+│       ├── CMakeLists.txt
+│       ├── extlib1.h
+│       ├── src
+│       │   └── extlib1.cpp
+│       └── sync
+│           ├── sync.cpp
+│           └── sync.hpp
+├── run.sh
 └── sublib
     ├── CMakeLists.txt
     ├── sublibrary1
     │   ├── CMakeLists.txt
-    │   ├── include
-    │   │   └── sublib1
-    │   │       └── sublib1.h
+    │   ├── load
+    │   │   ├── load.cpp
+    │   │   └── load.h
+    │   ├── mes
+    │   │   ├── mes.cpp
+    │   │   └── mes.hpp
     │   ├── src
     │   │   └── sublib1.cpp
+    │   ├── sublib1
+    │   │   └── sublib1.h
     │   └── sublibrary1Config.cmake
     ├── sublibrary2
     │   ├── CMakeLists.txt
