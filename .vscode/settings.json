@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "ostream": "cpp"
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/install/include",
+        "${workspaceFolder}/install/include/sublibrary1",
+        "${workspaceFolder}/install/include/sublibrary1/mes",
+        "${workspaceFolder}/install/include/sublibrary1/load",
+        "${workspaceFolder}/extlib_install/include",
+        "${workspaceFolder}/extlib_install/include/extlib1",
+    ]
+}
